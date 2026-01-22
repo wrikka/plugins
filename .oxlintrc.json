@@ -1,0 +1,21 @@
+{
+	"$schema": "./node_modules/oxlint/configuration_schema.json",
+	"plugins": [
+		"import",
+		"oxc",
+		"react",
+		"unicorn",
+		"react-perf",
+		"vitest",
+		"jsx-a11y",
+        "nextjs",
+        "promise",
+		"typescript",
+		"vue",
+		"node"
+	],
+	"env": {
+		"browser": true,
+		"node" :true
+	}
+}

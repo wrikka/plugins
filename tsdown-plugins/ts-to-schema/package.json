@@ -1,0 +1,26 @@
+{
+	"name": "ts-to-schema",
+	"type": "module",
+	"types": "./dist/index.d.ts",
+	"scripts": {
+		"build": "tsdown --config-loader unconfig",
+		"dev": "tsdown --watch --config-loader unconfig",
+		"lint": "oxlint --fix --type-aware",
+		"format": "dprint fmt",
+		"test": "vitest",
+		"verify": "bun lint && bun test"
+	},
+	"devDependencies": {
+		"@types/node": "^24.10.9",
+		"rolldown": "latest",
+		"tsdown": "latest",
+		"vitest": "latest"
+	},
+	"exports": {
+		".": "./dist/index.mjs",
+		"./package.json": "./package.json"
+	},
+	"dependencies": {
+		"typescript": "^5.9.3"
+	}
+}
