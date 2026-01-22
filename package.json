@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "watch": "turbo watch",
-    "prepare": "bunx lefthook install && bun update --latest -r",
+    "prepare": "bunx lefthook install",
     "dev": "turbo dev --ui=tui",
     "format": "turbo format",
     "scan": "bunx sg scan -r",
