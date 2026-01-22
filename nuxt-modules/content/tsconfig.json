@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"composite": true,
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"lib": ["ESNext"],
+		"types": ["nuxt", "vite/client"],
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"outDir": "./dist",
+		"rootDir": "./src",
+		"declaration": true
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "dist"]
+}

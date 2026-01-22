@@ -1,0 +1,14 @@
+{
+	"$schema": "https://unpkg.com/knip@5/schema.json",
+	"entry": [
+		"app/app.vue",
+		"app/pages/**/*.vue",
+		"server/api/**/*.ts",
+		"nuxt.config.ts"
+	],
+	"project": [
+		"app/**/*.{js,ts,vue}",
+		"server/**/*.{js,ts}",
+		"shared/**/*.{js,ts}"
+	]
+}

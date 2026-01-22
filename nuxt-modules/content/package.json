@@ -1,0 +1,48 @@
+{
+	"name": "@wrikka/content",
+	"type": "module",
+	"version": "0.0.1",
+	"main": "./dist/module.mjs",
+	"exports": {
+		".": {
+			"import": "./dist/module.mjs",
+			"require": "./dist/module.mjs"
+		},
+		"./runtime": {
+			"import": "./src/runtime/index.ts",
+			"types": "./src/runtime/index.ts"
+		},
+		"./runtime/*": {
+			"import": "./src/runtime/*",
+			"types": "./src/runtime/*"
+		},
+		"./runtime/shared/types": {
+			"import": "./src/runtime/shared/types/index.ts",
+			"types": "./src/runtime/shared/types/index.ts"
+		}
+	},
+	"scripts": {
+		"dev": "nuxt dev",
+		"build": "nuxt build-module",
+		"preview": "nuxt preview",
+		"format": "dprint fmt",
+		"lint": "nuxt typecheck",
+		"prepare": "nuxt prepare",
+		"typecheck": "nuxt typecheck",
+		"postinstall": "nuxt prepare",
+		"test": "vitest",
+		"verify": "bun run lint && bun run test && bun run build"
+	},
+	"dependencies": {
+		"nuxt": "^4.2.2",
+		"h3": "^1.15.0",
+		"glob": "^13.0.0",
+		"gray-matter": "^4.0.3"
+	},
+	"devDependencies": {
+		"dprint": "^0.51.1",
+		"oxlint": "^1.41.0",
+		"vite-plugin-checker": "^0.12.0",
+		"vitest": "^4.0.17"
+	}
+}
