@@ -1,0 +1,2 @@
+- ทุก plugins ให้มี ts- นำหน้า เช่น ts-to-schema
+- ใช้ tsdown สำหรับ build libraries ที่ใช้ Node.js built-in modules
