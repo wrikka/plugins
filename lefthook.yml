@@ -3,8 +3,7 @@ pre-commit:
     - name: install-deps
       run: bun install
     - name: format
-      run: bun run format {staged_files}
-
+      run: bun run format
 
 pre-rebase:
   jobs:
