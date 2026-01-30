@@ -1,6 +1,12 @@
 import { useAsyncData } from "nuxt/app";
 import type { ContentItem, QueryBuilder } from "../../shared/types";
 
+declare global {
+	interface ImportMeta {
+		glob: (pattern: string, options?: { eager?: boolean }) => Record<string, any>;
+	}
+}
+
 function normalizePath(path: string) {
 	if (!path) return "/" as const;
 	return path.startsWith("/") ? path : `/${path}`;

@@ -29,17 +29,17 @@
 		"lint": "nuxt typecheck",
 		"prepare": "nuxt prepare",
 		"typecheck": "nuxt typecheck",
-		"postinstall": "nuxt prepare",
 		"test": "vitest",
 		"verify": "bun run lint && bun run test && bun run build"
 	},
 	"dependencies": {
-		"nuxt": "^4.2.2",
-		"h3": "^1.15.0",
+		"gray-matter": "^4.0.3",
 		"glob": "^13.0.0",
-		"gray-matter": "^4.0.3"
+		"h3": "^1.15.0",
+		"nuxt": "^4.2.2"
 	},
 	"devDependencies": {
+		"@vue-macros/nuxt": "^3.1.2",
 		"dprint": "^0.51.1",
 		"oxlint": "^1.41.0",
 		"vite-plugin-checker": "^0.12.0",

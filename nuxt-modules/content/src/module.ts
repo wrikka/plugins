@@ -5,7 +5,7 @@ export default defineNuxtModule({
 		name: "content-module",
 		configKey: "content",
 	},
-	setup(options, nuxt) {
+	setup(options: any, nuxt: any) {
 		const resolver = createResolver(import.meta.url);
 
 		// Register runtime directory

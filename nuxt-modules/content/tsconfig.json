@@ -4,8 +4,13 @@
 		"target": "ESNext",
 		"module": "ESNext",
 		"moduleResolution": "bundler",
-		"lib": ["ESNext"],
-		"types": ["nuxt", "vite/client"],
+		"lib": [
+			"ESNext"
+		],
+		"types": [
+			"nuxt",
+			"node"
+		],
 		"strict": true,
 		"esModuleInterop": true,
 		"skipLibCheck": true,
@@ -15,6 +20,11 @@
 		"rootDir": "./src",
 		"declaration": true
 	},
-	"include": ["src/**/*"],
-	"exclude": ["node_modules", "dist"]
+	"include": [
+		"src/**/*"
+	],
+	"exclude": [
+		"node_modules",
+		"dist"
+	]
 }
