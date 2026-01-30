@@ -20,8 +20,8 @@ bun add @wrikka/content
 ```typescript
 // nuxt.config.ts
 export default defineNuxtConfig({
-  modules: ['@wrikka/content'],
-})
+	modules: ["@wrikka/content"],
+});
 ```
 
 ## Development
