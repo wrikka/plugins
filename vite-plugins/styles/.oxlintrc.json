@@ -1,7 +1,0 @@
-{
-  "plugins": [],
-  "ignorePatterns": [
-    "dist",
-    "node_modules"
-  ]
-}

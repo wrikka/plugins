@@ -1,0 +1,33 @@
+{
+	"name": "vite-plugin-ast-grep",
+	"version": "0.1.0",
+	"type": "module",
+	"description": "Vite plugin to watch and display ast-grep reports during development",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		}
+	},
+	"files": ["dist"],
+	"scripts": {
+		"build": "tsdown src/index.ts",
+		"dev": "tsdown src/index.ts --watch",
+		"test": "echo 'No tests yet'"
+	},
+	"dependencies": {
+		"chokidar": "^4.0.0",
+		"js-yaml": "^4.1.1"
+	},
+	"devDependencies": {
+		"@types/node": "^25.1.0",
+		"tsdown": "^0.20.1",
+		"typescript": "^5.9.3",
+		"vite": "^6.0.0"
+	},
+	"peerDependencies": {
+		"vite": "^5.0.0 || ^6.0.0"
+	}
+}

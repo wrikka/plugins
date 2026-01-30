@@ -1,0 +1,36 @@
+{
+  "name": "@booking-platform/vite-plugin-styles",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "oxlint",
+    "format": "dprint fmt"
+  },
+  "dependencies": {
+    "@unocss/vite": "^0.65.4",
+    "unocss": "^0.65.4"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^2.1.8",
+    "oxlint": "latest",
+    "tsdown": "^0.20.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.0",
+    "vitest": "^2.1.8"
+  }
+}
