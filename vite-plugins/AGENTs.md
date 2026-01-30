@@ -1,0 +1,3 @@
+- ทุก plugins ให้มี w นำหน้า เช่น wlinter, wrouter
+- ใช้ https://vite.dev/guide/build#library-mode
+- wrikka/ ให้นำทุก plugins มารวมกัน เป็นแค่ wrapper
